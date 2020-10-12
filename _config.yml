@@ -1,13 +1,13 @@
-title:            Site Title
-description:      Site description for the metas.
+title:            树博士天赋课
+description:      树博士天赋课是一套专为2~6岁儿童设计的天赋发掘和培养课程体系。通过大数据分析结合孩子上课时的行为状态和表现，洞察孩子的潜在天赋。家长可以根据孩子具备的天赋定向培养孩子。 只有掌握了孩子的天赋，才能让孩子走得更快，走得更远。
 logo:             omikron.png
 disqus_shortname: shortname
 # Assign a default image for your site's header and footer
 default_bg:       default_bg.jpg
-search:           true
+search:           false
 share:            true
 # Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
-readtime:         true
+readtime:         false
 # Turn on or off the fin animations in the header and footer
 triangleheader:	  true
 animated_fins:    true
@@ -42,11 +42,11 @@ jekyll-archives:
 
 # Owner/author information
 author:
-  name:           Your Name
+  name:           树博士
   picture:        your-photo.jpg
-  email:          your@email.com
+  email:          bd@treector.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Some Details about yourself
+  description:    树博士天赋课是一套专为2~6岁儿童设计的天赋发掘和培养课程体系。通过大数据分析结合孩子上课时的行为状态和表现，洞察孩子的潜在天赋。家长可以根据孩子具备的天赋定向培养孩子。 只有掌握了孩子的天赋，才能让孩子走得更快，走得更远。
   # Social networking links used in footer. Update and remove as you like.
   twitter:
   facebook:
@@ -55,7 +55,7 @@ author:
   instagram:
   tumblr:
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    "http://plus.google.com/123123123123132123"
+  # google_plus:    "http://plus.google.com/123123123123132123"
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:
@@ -64,14 +64,14 @@ google_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: Home
+  - title: 首页
     url: /
     external: false
     icon: home
-  - title: Categories
-    url: /categories
-  - title: Tags
-    url: /tags
+  # - title: Categories
+  #   url: /categories
+  # - title: Tags
+  #   url: /tags
 
 # Sitemap configuration
 # https://github.com/kinnetica/jekyll-plugins
@@ -85,7 +85,7 @@ sitemap:
         - "/index.html"
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Shanghai
 future:      true
 markdown:    kramdown
 highlighter: rouge

@@ -95,11 +95,11 @@ tags: [tags]
 			</ul>
 			<div class="post-info text-center small">
 				Status posted @
-				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>
+				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%Y-%m-%d" }}</time>
 
 				{% if post.modified %}
 					{% if modifiedtime != posttime %} 
-				and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
+				and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%Y-%m-%d" }}</time></code>
 					{% endif %}
 				{% endif %} 
 				
@@ -141,12 +141,12 @@ tags: [tags]
 			</h2>
 
 			<div class="post-info text-center small">
-				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>
+				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%Y-%m-%d" }}</time>
 			
 			{% if post.modified %}
 			
 				{% if modifiedtime != posttime %} 
-				and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
+				and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%Y-%m-%d" }}</time></code>
 				{% endif %}
 			{% endif %} 
 				in <span class="post-tags">
@@ -237,11 +237,11 @@ tags: [tags]
 			</h2>
 				
 			<div class="post-info text-center small">
-				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>
+				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%Y-%m-%d" }}</time>
 				
 			{% if post.modified %}
 				{% if modifiedtime != posttime %}
-			and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
+			and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%Y-%m-%d" }}</time></code>
 				{% endif %}
 			{% endif %} 
 			
@@ -278,11 +278,11 @@ tags: [tags]
 			<div class="text-center">
 			{% if post.description %}
 				<a href="{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-					<i class="fa fa-link"></i> read more...
+					<i class="fa fa-link"></i> 了解更多
 				</a>
 			{% else %}
 				<a href="{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-					<i class="fa fa-link"></i> read more...
+					<i class="fa fa-link"></i> 了解更多
 				</a>
 			{% endif %}
 			</div>
@@ -312,11 +312,11 @@ tags: [tags]
 			</h2>
 
 			<div class="post-info text-center small">
-				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>
+				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%Y-%m-%d" }}</time>
 
 			{% if post.modified %}
 				{% if modifiedtime != posttime %}
-					and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
+					and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%Y-%m-%d" }}</time></code>
 				{% endif %}
 			{% endif %} 
 				
@@ -361,11 +361,11 @@ tags: [tags]
 			<div class="text-center">
 			{% if post.description %}
 				<a href="{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-					<i class="fa fa-link"></i> read more...
+					<i class="fa fa-link"></i> 了解更多
 				</a>
 			{% else %}
 				<a href="{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-					<i class="fa fa-link"></i> read more...
+					<i class="fa fa-link"></i> 了解更多
 				</a>
 			{% endif %}
 			</div>
@@ -479,10 +479,10 @@ tags: [tags]
 				</li>
 			</ul>
 			<div class="post-info text-center small">
-				Status posted @ <time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>
+				Status posted @ <time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%Y-%m-%d" }}</time>
 			{% if post.modified %}
 				{% if modifiedtime != posttime %}
-				and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
+				and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%Y-%m-%d" }}</time></code>
 				{% endif %}
 			{% endif %}
 			
@@ -519,10 +519,10 @@ tags: [tags]
 		{% endif %}
 			</h2>
 			<div class="post-info text-center small">
-				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>
+				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%Y-%m-%d" }}</time>
 				{% if post.modified %}
 					{% if modifiedtime != posttime %}
-					and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
+					and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%Y-%m-%d" }}</time></code>
 					{% endif %}
 				{% endif %}
 				
@@ -609,11 +609,11 @@ tags: [tags]
 		</h2>
 
 			<div class="post-info text-center small">
-				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>
+				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%Y-%m-%d" }}</time>
 			
 			{% if post.modified %}
 				{% if modifiedtime != posttime %}
-				and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
+				and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%Y-%m-%d" }}</time></code>
 				{% endif %}
 			{% endif %}
 
@@ -648,11 +648,11 @@ tags: [tags]
 			<div class="text-center">
 			{% if post.description %}
 				<a href="{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-					<i class="fa fa-link"></i> read more...
+					<i class="fa fa-link"></i> 了解更多
 				</a>
 			{% else %}
 				<a href="{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-					<i class="fa fa-link"></i> read more...
+					<i class="fa fa-link"></i> 了解更多
 				</a>
 			{% endif %}
 			</div>
@@ -680,10 +680,10 @@ tags: [tags]
 			</h2>
 
 			<div class="post-info text-center small">
-				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>
+				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%Y-%m-%d" }}</time>
 			{% if post.modified %}
 				{% if modifiedtime != posttime %} 
-				and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
+				and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%Y-%m-%d" }}</time></code>
 				{% endif %}
 			{% endif %}
 
