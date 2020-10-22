@@ -1,7 +1,7 @@
 title:            树博士天赋课
 description:      树博士天赋课是一套专为2~6岁儿童设计的天赋发掘和培养课程体系。通过大数据分析结合孩子上课时的行为状态和表现，洞察孩子的潜在天赋。家长可以根据孩子具备的天赋定向培养孩子。 只有掌握了孩子的天赋，才能让孩子走得更快，走得更远。
 logo:             omikron.png
-disqus_shortname: shortname
+# disqus_shortname: shortname
 # Assign a default image for your site's header and footer
 default_bg:       default_bg.png
 search:           false
@@ -42,7 +42,7 @@ jekyll-archives:
 
 # Owner/author information
 author:
-  name:           树博士
+  name:           北京卡姆利多科技有限公司
   picture:        your-photo.jpg
   email:          bd@treector.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
